@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		B034726620C4E1F0004DB681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034726520C4E1F0004DB681 /* AppDelegate.swift */; };
 		B034726820C4E1F0004DB681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034726720C4E1F0004DB681 /* ViewController.swift */; };
-		B034726B20C4E1F0004DB681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B034726920C4E1F0004DB681 /* Main.storyboard */; };
 		B034726D20C4E1F2004DB681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B034726C20C4E1F2004DB681 /* Assets.xcassets */; };
 		B034727020C4E1F2004DB681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B034726E20C4E1F2004DB681 /* LaunchScreen.storyboard */; };
+		B034727820C4E203004DB681 /* BingoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034727720C4E203004DB681 /* BingoSheet.swift */; };
+		B034727A20C4E21B004DB681 /* BingoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034727920C4E21B004DB681 /* BingoItem.swift */; };
+		B034727C20C4EFB8004DB681 /* BingoItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034727B20C4EFB8004DB681 /* BingoItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B034726220C4E1F0004DB681 /* WWDCBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B034726520C4E1F0004DB681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B034726720C4E1F0004DB681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B034726A20C4E1F0004DB681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B034726C20C4E1F2004DB681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B034726F20C4E1F2004DB681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B034727120C4E1F2004DB681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B034727720C4E203004DB681 /* BingoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoSheet.swift; sourceTree = "<group>"; };
+		B034727920C4E21B004DB681 /* BingoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoItem.swift; sourceTree = "<group>"; };
+		B034727B20C4EFB8004DB681 /* BingoItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				B034726520C4E1F0004DB681 /* AppDelegate.swift */,
 				B034726720C4E1F0004DB681 /* ViewController.swift */,
-				B034726920C4E1F0004DB681 /* Main.storyboard */,
 				B034726C20C4E1F2004DB681 /* Assets.xcassets */,
 				B034726E20C4E1F2004DB681 /* LaunchScreen.storyboard */,
 				B034727120C4E1F2004DB681 /* Info.plist */,
+				B034727720C4E203004DB681 /* BingoSheet.swift */,
+				B034727920C4E21B004DB681 /* BingoItem.swift */,
+				B034727B20C4EFB8004DB681 /* BingoItemCollectionViewCell.swift */,
 			);
 			path = WWDCBingo;
 			sourceTree = "<group>";
@@ -124,7 +130,6 @@
 			files = (
 				B034727020C4E1F2004DB681 /* LaunchScreen.storyboard in Resources */,
 				B034726D20C4E1F2004DB681 /* Assets.xcassets in Resources */,
-				B034726B20C4E1F0004DB681 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +140,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B034727A20C4E21B004DB681 /* BingoItem.swift in Sources */,
 				B034726820C4E1F0004DB681 /* ViewController.swift in Sources */,
+				B034727820C4E203004DB681 /* BingoSheet.swift in Sources */,
 				B034726620C4E1F0004DB681 /* AppDelegate.swift in Sources */,
+				B034727C20C4EFB8004DB681 /* BingoItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B034726920C4E1F0004DB681 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B034726A20C4E1F0004DB681 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B034726E20C4E1F2004DB681 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RZK4BBVLPU;
 				INFOPLIST_FILE = WWDCBingo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RZK4BBVLPU;
 				INFOPLIST_FILE = WWDCBingo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
